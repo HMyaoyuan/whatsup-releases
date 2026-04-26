@@ -44,8 +44,8 @@ https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.d
 
 ### 定价
 
-- **免费试用 3 天**，全功能，不要邮箱不要账号
-- **¥18 / $3 一次买断**，绑定当前 Mac 终身有效，v1.x 免费更新
+- **免费试用 3 天**，全功能，不用注册账号
+- **¥18 / $3 一次买断**，绑定当前 Mac 终身有效，后续更新免费
 - 购买入口：[findwhatsup.com/#pricing](https://findwhatsup.com/#pricing)
 
 ### 为什么是公开仓库但没有源码？
@@ -86,8 +86,8 @@ Or browse all versions on the [Releases page](https://github.com/HMyaoyuan/whats
 
 ### Pricing
 
-- **3-day free trial**, full feature set, no email, no account
-- **¥18 / $3 one-time** — bound to this Mac for life, free v1.x updates
+- **3-day free trial**, all features, no sign-up
+- **¥18 / $3 one-time** — bound to this Mac for life, free updates forever
 - Buy: [findwhatsup.com/#pricing](https://findwhatsup.com/#pricing)
 
 ### Why is this repo public but empty?
