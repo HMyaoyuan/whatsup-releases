@@ -4,147 +4,108 @@
 
 # What's Up
 
-### 让 Cursor、Claude Code、Terminal 偷偷起来的那些进程，再也藏不住
+### Mac 菜单栏里的开发服务器管家
 
-**macOS 菜单栏里一只不吵的小鼠，负责盯紧您每天忘关的 dev server、docker、AI agent……一目了然，一键收走。**
+**看清后台正在跑什么，找出占用端口的服务，把不需要的进程一键收走。**
 
-[🌐 findwhatsup.com](https://findwhatsup.com) · [💰 ¥18 / $3 一次买断](https://findwhatsup.com/#pricing) · [📦 所有版本](https://github.com/HMyaoyuan/whatsup-releases/releases)
+[官网](https://findwhatsup.com) · [立即购买 ¥18](https://findwhatsup.com/#pricing) · [下载最新版](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)
 
-[![Download](https://img.shields.io/badge/下载_最新版-WhatsUp.dmg_·_3.5MB-0A84FF?style=for-the-badge&logo=apple)](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)
+[![Download](https://img.shields.io/badge/下载_最新版-WhatsUp.dmg_·_3.55MB-0A84FF?style=for-the-badge&logo=apple)](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)
 [![macOS](https://img.shields.io/badge/macOS-13_Ventura+-lightgrey?style=for-the-badge&logo=apple)](https://findwhatsup.com)
 [![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1_·_M2_·_M3_·_M4_·_M5-orange?style=for-the-badge)](https://findwhatsup.com)
-[![Notarized](https://img.shields.io/badge/Apple-Notarized_✓-success?style=for-the-badge)](https://findwhatsup.com)
+[![Notarized](https://img.shields.io/badge/Apple-Developer_ID_Notarized-success?style=for-the-badge)](https://findwhatsup.com)
 
 </div>
 
 ---
 
-## 中文
+## 为什么需要 What's Up
 
-### 您是不是也这样？
+写代码时，Mac 后台经常比你想象中更热闹。
 
-凌晨两点终于写完代码，合上 MacBook —— 风扇还在转。
+一个 Cursor 窗口、一个 Terminal、一个 Docker、一个前端 dev server，可能顺手就留下好几个 `node`、`python`、`vite`、`next dev`、`webpack`、`ollama`。窗口关了，服务却还在；项目切走了，端口还被占着；等你再次启动时，只剩一句熟悉的报错：
 
-打开活动监视器一看，8 个 `node`、3 个 `python`、2 个 Docker 容器、1 个 Ollama、再加上 Cursor / Claude Code / Codex 不知道什么时候顺手起的一堆 `esbuild` `vite` `webpack-dev-server`……
+`address already in use`
 
-**What's Up** 就是为这种场景做的。
+What's Up 做的事情很简单：**把这些后台开发服务从黑盒里拿出来，放到菜单栏里给你看。**
 
-### 它会为您做什么？
+## 你会得到什么
 
-🎯 **一眼看清**
-常驻菜单栏，点开就是一张**按 Git 仓库分组**的清单。哪个项目还在跑、哪个端口被占、哪个是 AI 偷偷起的，一目了然。
+### 一眼看见正在运行的项目
 
-🧟 **揪出僵尸**
-那些 IDE 关了、窗口也没了、进程却还在后台吃资源的"僵尸"？自动识别，红色高亮。
+What's Up 会把本机正在运行的开发进程整理成清晰列表。你不用打开活动监视器，也不用在终端里猜哪个 PID 属于哪个项目。
 
-♊ **发现重复**
-同一个 `next dev` 起了 3 次？同一个 Docker service 开了 2 个实例？What's Up 会提醒您。
+### 本地端口更好管理
 
-🧹 **一键收走**
-选中 → kill。再顽固的进程也能一次清理，不用再一个个 `kill -9`。
+哪个服务占着 `3000`、`5173`、`8080`，哪个项目还在监听本地端口，打开菜单栏就能看到。遇到端口冲突时，也能更早发现、更快处理。
 
-🔋 **装上就忘**
-菜单栏图标、极低的内存占用、不打扰通知 —— 它的目标就是让您"99% 的时间感觉不到它"，直到您需要它的那 1%。
+### 多余进程更容易清理
 
-### 立刻下载
+不需要的服务可以直接从菜单栏收走。每天来回切换项目、分支、AI agent、Docker 和各种 dev server 的开发者，会明显少掉很多重复排查。
 
-📦 **最新版永远在这**：[`WhatsUp.dmg`（3.5 MB）](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)
+### 安静、轻量、装上就忘
 
-或浏览 [全部版本与更新日志](https://github.com/HMyaoyuan/whatsup-releases/releases)。
+What's Up 常驻菜单栏，不弹窗、不打扰。它不想成为另一个复杂 dashboard，只在你需要知道“后台到底跑了什么”时出现。
 
-### 3 步装好
+## 正式版 0.4.0
 
-1. 双击下载好的 `WhatsUp.dmg`
-2. 把 🐭 What's Up 图标拖进「应用程序」
-3. 第一次打开时在「**系统设置 → 隐私与安全 → 仍要打开**」点一下即可 —— 这是 macOS 对所有第三方独立开发者的标准流程
+0.4.0 是 What's Up 的正式公开发布版，重点强化了端口可见性、冲突提示、菜单栏体验和版本显示。
 
-菜单栏出现一只小鼠，就完事了。
+- 本地服务与端口状态更清楚
+- 端口冲突更容易被发现
+- 已激活用户的菜单更干净
+- 应用内版本号正确显示为 `0.4.0`
+- Apple Silicon 原生构建，已通过 Apple 公证
 
-### 定价：¥18，一次买断，终身更新
+## 下载与安装
 
-- 🎁 **免费试用 3 天** · 全功能 · 不用注册 · 不用填邮箱
-- 💎 **¥18 / $3 一次买断** · 绑定您这台 Mac 终身有效 · 未来所有版本免费更新
-- 🌐 **现在就买**：[findwhatsup.com/#pricing](https://findwhatsup.com/#pricing)
+推荐下载：
 
-> 两杯奶茶的钱，把"后台到底跑了什么"这个心智负担一次性解决。
+**[WhatsUp.dmg](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)**
 
-### 系统要求
+安装步骤：
 
-- macOS 13 Ventura 及以上
-- Apple Silicon（M1 / M2 / M3 / M4 / M5）原生
-- Apple 公证通过，一路绿色通行
+1. 下载并打开 `WhatsUp.dmg`
+2. 把 **What's Up** 拖入 **Applications**
+3. 第一次打开时，如 macOS 提示安全确认，请到「系统设置 → 隐私与安全」点击「仍要打开」
 
-### 为什么仓库是公开的但没源码？
+这是独立开发者应用在 macOS 上的标准流程。
 
-这个仓库只放**签名公证过的 DMG 和版本说明** —— 您的下载体验会更稳：永远有一个 `/releases/latest/download/WhatsUp.dmg` 的恒定链接，企业内网、自动化部署、第三方工具都能直接用。源码在另一个私有仓库里持续迭代。
+## 价格
 
----
+- **3 天免费试用**：完整功能开放，不需要注册，不需要邮箱
+- **¥18 / $3 一次买断**：绑定一台 Mac，终身有效
+- **后续更新免费**
+- 购买后不提供退款。请先充分试用，确认适合你的工作流后再下单。
 
-## English
+购买授权：[findwhatsup.com/#pricing](https://findwhatsup.com/#pricing)
 
-### Does this sound familiar?
+购买后领取 License Key：[findwhatsup.com/redeem](https://findwhatsup.com/redeem)
 
-It's 2AM, you finally close your MacBook, and the fan is still spinning.
+## 隐私
 
-You open Activity Monitor and find 8 `node`, 3 `python`, 2 Docker containers, 1 Ollama — plus a pile of `esbuild` / `vite` / `webpack-dev-server` that Cursor / Claude Code / Codex quietly spun up somewhere along the way.
+What's Up 的扫描在本机完成。它不上传你的项目路径、命令行参数、进程列表或端口列表。
 
-**What's Up** exists for exactly that moment.
+许可证激活只会发送必要的 License Key 与设备绑定信息，用于确认购买状态。
 
-### What it does for you
+## 系统要求
 
-🎯 **At-a-glance clarity**
-A menu-bar icon that pops open a clean list of every background process on your Mac, **grouped by Git repo**. Who's still running, which port is bound, which one your AI assistant started — all visible in one click.
+- macOS 13 Ventura 或以上
+- Apple Silicon：M1 / M2 / M3 / M4 / M5
+- Apple Developer ID 签名、公证、装订
 
-🧟 **Zombie hunter**
-Editors closed, windows gone, but the process is still chewing CPU? What's Up flags it in red and offers a one-tap kill.
+## 关于这个发布仓
 
-♊ **Duplicate detector**
-Same `next dev` started three times? Two copies of the same Docker service? What's Up spots them and shows you exactly where.
+这个仓库只托管 **签名并公证过的 DMG 安装包** 和对外发布说明。GitHub 页面自动生成的 `Source code (zip/tar.gz)` 只是这个发布仓本身的快照，不是 What's Up 应用源码。
 
-🧹 **One-click cleanup**
-Select → kill. No more `kill -9` guessing games.
-
-🔋 **Install and forget**
-Menu-bar only. Tiny memory footprint. Zero nag notifications. Built to be invisible 99% of the time and indispensable for the other 1%.
-
-### Download
-
-📦 **Latest always here**: [`WhatsUp.dmg` (3.5 MB)](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)
-
-Or browse [all releases & changelogs](https://github.com/HMyaoyuan/whatsup-releases/releases).
-
-### Install in 3 steps
-
-1. Double-click `WhatsUp.dmg`
-2. Drag 🐭 What's Up into `/Applications`
-3. First-launch Gatekeeper: **System Settings → Privacy & Security → Open Anyway** — standard macOS flow for every indie dev
-
-A mole in your menu bar means you're set.
-
-### Pricing: $3, one-time, free updates forever
-
-- 🎁 **3-day free trial** · full features · no sign-up · no email required
-- 💎 **$3 / ¥18 one-time** · bound to this Mac for life · free forever for every future version
-- 🌐 **Buy now**: [findwhatsup.com/#pricing](https://findwhatsup.com/#pricing)
-
-> Less than a cup of coffee. "What's running in my background" solved forever.
-
-### Requirements
-
-- macOS 13 Ventura or later
-- Apple silicon (M1 / M2 / M3 / M4 / M5), native
-- Signed & notarised by Apple
-
-### Why is this repo public but source-free?
-
-It hosts only the **signed & notarised DMG** plus release notes — which means you get a rock-solid, permanent URL at `/releases/latest/download/WhatsUp.dmg` that works for corporate intranets, CI/CD, or anything else that needs a stable download. Source lives in a separate private repo.
+What's Up 的产品源码不在这个公开仓库中分发。
 
 ---
 
 <div align="center">
 
-**Made with ☕ in Shenzhen · by [@HMyaoyuan](https://github.com/HMyaoyuan)**
+**Made in Shenzhen · by [@HMyaoyuan](https://github.com/HMyaoyuan)**
 
-<sub>Copyright © 2026 HMyaoyuan · Binaries distributed from this repository are governed by the [EULA](https://findwhatsup.com/eula) shipped with each release · Redistribution requires written permission</sub>
+<sub>Copyright © 2026 HMyaoyuan · Binaries distributed from this repository are governed by the EULA shipped with each release · Redistribution requires written permission.</sub>
 
 </div>
