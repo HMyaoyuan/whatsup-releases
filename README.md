@@ -12,7 +12,7 @@
 
 [![Download](https://img.shields.io/badge/下载_最新版-WhatsUp.dmg_·_3.5MB-0A84FF?style=for-the-badge&logo=apple)](https://github.com/HMyaoyuan/whatsup-releases/releases/latest/download/WhatsUp.dmg)
 [![macOS](https://img.shields.io/badge/macOS-13_Ventura+-lightgrey?style=for-the-badge&logo=apple)](https://findwhatsup.com)
-[![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1_·_M2_·_M3_·_M4-orange?style=for-the-badge)](https://findwhatsup.com)
+[![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-M1_·_M2_·_M3_·_M4_·_M5-orange?style=for-the-badge)](https://findwhatsup.com)
 [![Notarized](https://img.shields.io/badge/Apple-Notarized_✓-success?style=for-the-badge)](https://findwhatsup.com)
 
 </div>
@@ -71,7 +71,7 @@
 ### 系统要求
 
 - macOS 13 Ventura 及以上
-- Apple Silicon（M1 / M2 / M3 / M4）原生
+- Apple Silicon（M1 / M2 / M3 / M4 / M5）原生
 - Apple 公证通过，一路绿色通行
 
 ### 为什么仓库是公开的但没源码？
@@ -132,7 +132,7 @@ A mole in your menu bar means you're set.
 ### Requirements
 
 - macOS 13 Ventura or later
-- Apple silicon (M1 / M2 / M3 / M4), native
+- Apple silicon (M1 / M2 / M3 / M4 / M5), native
 - Signed & notarised by Apple
 
 ### Why is this repo public but source-free?
